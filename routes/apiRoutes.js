@@ -39,7 +39,7 @@ router.put("/edit/:id", (req, res) => {
       {
         where: { id: req.params.id }
       }
-    ).then(() => res.send("success"));
+    ).then(() => res.send("car update success"));
   });
 
 // delete car
@@ -48,7 +48,7 @@ router.delete('/deleted/:id', (req, res) => {
         where: {
             id: req.params.id
         }
-    }).then(() => res.send('success'))
+    }).then(() => res.send('car deleted success'))
 })
 
 
